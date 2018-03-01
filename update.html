@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>We Connect</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container-fluid">
+                  <div class="navbar-header">
+                    <a class="navbar-brand" href="#">We Connect</a>
+                  </div>
+                  <ul class="nav navbar-nav">
+                      <li><a href="dashboard.html">Dashboard</a></li>
+                  </ul>
+                   <ul class="nav navbar-nav">
+                      <li class="active"><a href="update.html">Update Business</a></li>
+                  </ul>
+                  <ul class="nav navbar-nav navbar-right">
+                        <li><a href="login.html"><span class="glyphicon glyphicon-log-out"></span> Sign out</a></li>
+                    </ul>
+                </div>
+              </nav> 
+
+
+              <div class="container">
+                  <form class="from-horizontal">
+                      <div class="jumbotron" style="margin-top: 150px">
+                        <h3> Update Business</h3>
+                        <br />
+                        <div class="inputwrapper">
+                            <label>Title</label>
+                                <input type="text" class="form-control" id="title" placeholder="Title of Business" required>
+                        </div>
+                        <br>
+                        <div class="inputwrapper">
+                                <label>Category</label>
+                                    <input type="text" class="form-control" id="category" placeholder="Category of Business" required>
+                        </div>
+                        <br>
+                        <div class="inputwrapper">
+                                <label>Details</label>
+                                    <textarea class="form-control" id="details" rows="5" required></textarea>
+                        </div>
+                        <br>
+                        <button type="submit" class="btn btn-success">Update</button>
+                      </div>
+                  </form>
+              </div>
+</body>
+</html>
