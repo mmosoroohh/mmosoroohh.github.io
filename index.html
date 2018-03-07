@@ -1,81 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>We Connect</title>
+    <title>WeConnect</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    
 </head>
 <body>
-                   
-
-        <nav class="navbar navbar-inverse navbar-fixed-top">
-                <div class="container-fluid">
-                  <div class="navbar-header">
-                        <a class="navbar-brand" href="#">We Connect</a>
-                    </div>
-		    <ul class="nav navbar-nav navbar-left">
-			 <li><a href="views.html">View Businesses</a></li>
-		    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                          <li><a href="register.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                          <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Sign In</a></li>
-  
-                    </ul>
-                  
-                    <form class="navbar-form navbar-right" action="/action_page.php">
-                      <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search">
-                        <div class="input-group-btn">
-                          <button type="submit" class="btn btn-default">
-                              <i class="glyphicon glyphicon-search"></i>
-                          </button>
-                          </div>
-                      </div>
-                    </form>
-                  </div>
-                </nav> 
-
-
-    <div class="container">
-        <form class="form-horizontal">
-            <div class="jumbotron" style="margin-top: 150px">
-
-                <h3> Please Login</h3>
-                <br />
-                
-                <div class="form-group">
-                        <label class="control-label col-sm-2" for="email">Email:</label>
-                        <div class="col-sm-10">
-                            <input type="email" class="form-control" id="email" placeholder="Enter Email" name="Enter Email" required>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                            <label class="control-label col-sm-2" for="name">Password:</label>
-                            <div class="col-sm-10">
-                                <input type="password" class="form-control" id="password" placeholder="Enter Password" name="Enter Password" required>
-                                <a class="form-sublink" href="reset.html">Forgot password?</a>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="colo-sm-offset-2 colo-sm-10">
-                                <button type="submit" class="btn btn-default">Sign In</button>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                                <div class="colo-sm-offset-2 colo-sm-10">
-                                    <span>Don't have an account...<a href="register.html">Sign Up</a></span>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </form>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">WeConnect</a>
+            <button class="navbar-toggler navbar-toggler-left" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+            </button>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="WeConnect" aria-label="Search">
             </form>
-        </form>
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="login.html">Sign in
+                     <span class="sr-only">(current)</span>
+                </a>
+                <span class="navbar-text"> | </span>
+                    <a class="nav-item nav-link" href="register.html">Sign up </a>
+            </div>
+        </div>
+     </nav>
 
-    </div>
+     
+            <div class="container my-auto">
+                <div class="jumbotron" style="margin-top: 50px">
+                    <div class="col-lg-12 mx-auto">
+                        <strong>
+                            <p class="text-faded mb-5">Sign in to WeConnect</p>
+                        </strong>
+                        <div class="form-register mx-auto">
+                            <form>
+                                <div class="form-group">
+                                    <label for="EmailInput" class="col-form-label col-form-label-sm">Email address</label>
+                                    <input type="email" class="form-control" id="EmailInput" required>
     
-</body>
-</html>
+                                    <label for="PasswordInput" class="col-form-label col-form-label-sm">Password</label>
+                                    <input type="password" class="form-control" id="PasswordInput" required>
+                                    <small id="PasswordInput" class="form-text text-muted" style="text-align:right !important;">
+                                        <a href="reset.html">Forgot Password?</a>
+                                    </small>
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="checkbox"> Remember Me
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-success btn btn-block">Sign in</button>
+                                </div>
+                                <small id="PasswordInput" class="form-text text-muted" style="text-align: center !important;">
+                                    New to WeConnect?
+                                    <a href="register.html">Create an account. </a>
+                                </small>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+    </body>
+    </html>
+  
