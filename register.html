@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>WeConnect</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">WeConnect</a>
+            <button class="navbar-toggler navbar-toggler-left" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+            </button>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="WeConnect" aria-label="Search">
+            </form>
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="login.html">Sign in
+                     
+                </a>
+                <span class="navbar-text"> | </span>
+                    <a class="nav-item nav-link active" href="register.html">Sign up
+                        <span class="sr-only">(current)</span>
+                     </a>
+            </div>
+        </div>
+     </nav>
+
+     <div class="container my-auto">
+            <div class="jumbotron" style="margin-top: 70px">
+                <div class="col-lg-12 mx-auto">
+                    <strong>
+                        <p class="text-faded mb-5">Create your personal account</p>
+                    </strong>
+                    <div class="form-register mx-auto">
+                        <form>
+                            <div class="form-group">
+                                <label for="FirstnameInput" class="col-form-label col-form-label-sm">First Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter First Name" required>
+                                
+                                <label for="LastnameInput" class="col-form-label col-form-label-sm">Last Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter Last Name" required>
+
+                                <label for="EmailInput" class="col-form-label col-form-label-sm">Email address</label>
+                                <input type="email" class="form-control" id="EmailInput" placeholder="you@example.com" required>
+                                <small id="PasswordInput" class="form-text text-muted">
+                                    We'll occasionally send updates about your account to this inbox. We'll never share your email address with anyone.
+                                </small>
+
+                                <label for="PasswordInput" class="col-form-label col-form-label-sm">Password</label>
+                                <input type="password" class="form-control" id="PasswordInput" placeholder="Create a password" required>
+                                <small id="PasswordInput" class="form-text text-muted">
+                                    Use at least one lowercase letter, one numeral, and seven characters.
+                                </small>
+
+                                <label for="ConfirmPasswordInput" class="col-form-label col-form-label-sm">Confirm Password</label>
+                                <input type="password" class="form-control" id="ConfirmPasswordInput" placeholder="Confirm password" required>
+                            </div>
+                            <small id="PasswordInput" class="form-text text-muted">
+                                By clicking "Sign up for WeConnect", you agree to our
+                                <a href="#">terms of service</a> and
+                                <a href="#">privacy policy</a>.
+                            </small>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-success btn btn-block">Sign up for WeConnect</button>
+                            </div>
+                            <small id="PasswordInput" class="form-text text-muted" style="text-align: center !important;">
+                                Already Registered?
+                                <a href="login.html">Sign In </a>
+                            </small>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
