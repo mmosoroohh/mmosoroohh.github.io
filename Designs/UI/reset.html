@@ -1,57 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>We Connect</title>
+    <title>WeConnect</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    
 </head>
 <body>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">WeConnect</a>
+            <button class="navbar-toggler navbar-toggler-left" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+            </button>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="WeConnect" aria-label="Search">
+            </form>
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="login.html">Sign in
+                     <span class="sr-only">(current)</span>
+                </a>
+                <span class="navbar-text"> | </span>
+                    <a class="nav-item nav-link" href="register.html">Sign up </a>
+            </div>
+        </div>
+     </nav>
 
-        <nav class="navbar navbar-inverse navbar-fixed-top">
-                <div class="container-fluid">
-                  <div class="navbar-header">
-                    <a class="navbar-brand" href="#">We Connect</a>
-                    <ul class="nav navbar-nav">
-                      <li><a href="views.html">View Business</a></li>
-                  </ul>
-                  </div>
-                  <ul class="nav navbar-nav navbar-right">
-                        <li><a href="register.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                        <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Sign In</a></li>
-
-                  </ul>
-                </div>
-              </nav> 
-
-
-    <div class="container">
-        <form class="form-horizontal">
-            <div class="jumbotron" style="margin-top: 150px">
-                <h3 class="mb-1 text-center"> Forgot your password?</h3>
-                <p class="fs-14 text-gray text-center">Enter your Email and we'll send you a reset link.</p>
-                    <div class="form-group">
-                        <label class="control-label col-sm-2" for="email">Email:</label>
-                            <div class="col-sm-10">
-                                <input type="email" class="form-control" id="email" placeholder="Enter Email" name="Enter Email" required>
+     <div class="container my-auto">
+            <div class="jumbotron" style="margin-top: 50px">
+                <div class="col-lg-12 mx-auto">
+                    <strong>
+                        <p class="text-faded mb-5">Reset your password</p>
+                    </strong>
+                    <div class="form-register mx-auto">
+                        <form>
+                            <div class="form-group">
+                                <label for="EmailInput" class="col-form-label col-form-label-sm">
+                                    Enter your email address and we will send you a link to reset your password.
+                                </label>
+                                <input type="email" class="form-control" id="EmailInput" required>
                             </div>
-                        </div>
-                            <div class="from-group">
-                                <div class="colo-sm-offset-2 colo-sm-10"></div>
-                                    <button type="submit" class="btn btn-default">Send password reset</button>
-                                </div>
-                                <p class="small text-center text-gray-soft">
-                                        Remember your password?
-                                        <a href="login.html">Sign In</a>
-                                    </p>   
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-success btn btn-block">Send password reset email</button>
+                            </div>
+                        </form>
                     </div>
-
-                            </div> 
-                            
-        </form>
-    </div>
-
+                </div>
+            </div>
+        </div>
 </body>
 </html>
